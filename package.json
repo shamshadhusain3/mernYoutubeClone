@@ -1,0 +1,15 @@
+{
+  "name": "mainproject",
+  "version": "1.0.0",
+  "description": "this is a full youtube clone project with refernce of chai or backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5"
+  }
+}
