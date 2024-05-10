@@ -17,9 +17,16 @@ app.use(cors({
 
 app.use(express.json({limit:'16kb'}))//when you get data from form  you will need this line
 app.use(express.urlencoded({extended:true,limit:'16kb'}))//when you get data from url  you will need this line
-app.user(express.static('public'))//when you want to keep images pdf on your own server or folder then it will be use
+app.use(express.static('public'))//when you want to keep images pdf on your own server or folder then it will be use
 app.use(cookieParser())//it will use to access or to keep cookies on clients browser
 
+
+// import routes
+import userRoute from './routes/user.routes.js'
+
+// declare routes
+
+app.use('/api/v1/user',userRoute)
 
 
 
